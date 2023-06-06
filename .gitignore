@@ -1,0 +1,148 @@
+# Ignore configuration files that may contain sensitive information.
+local.settings.php
+settings.ddev.php
+local.drush.yml
+local.site.yml
+local.services.yml
+tests/behat/local.yml
+box/local.config.yml
+/node_modules
+*.local
+.env
+.ssh
+.npm
+
+# Ignore paths that contain user-generated content.
+web/sites/*/files
+/files-private
+web/sites/*/private
+
+# Ignore custom theme build artifacts
+web/themes/custom/*/node_modules
+web/themes/custom/*/*.css
+
+# Ignore build artifacts
+deployment_identifier
+/deploy
+bin/*
+tmp
+reports
+logs/*
+
+# OS X
+.DS_Store
+.AppleDouble
+.LSOverride
+.bash_history
+
+# Thumbnails
+._*
+
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Eclipse
+*.pydevproject
+.project
+.metadata
+tmp/**
+tmp/**/*
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.classpath
+.settings/
+.loadpath
+
+# External tool builders
+.externalToolBuilders/
+
+# Locally stored "Eclipse launch configurations"
+*.launch
+
+# CDT-specific
+.cproject
+
+# PDT-specific
+.buildpathk
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# User-specific stuff:
+.idea/
+
+#XHProf
+xhprof_*
+
+# Composer vendor
+vendor
+**/core
+**/libraries/
+**/modules/contrib
+**/profiles/contrib
+**/themes/contrib
+
+# Sass
+.sass-cache
+*.css.map
+
+# Netbeans IDE
+nbproject
+nbproject/*
+
+# DrupalVM
+.vagrant/
+
+# DevDesktop
+*.dd
+
+# Exports
+*.gz
+*.sql
+*.zip
+
+# PHPStorm
+atlassian-ide-plugin.xml
+
+# NPM
+npm-debug.log
+.yarnrc
+.node-gyp
+
+# Drush, terminus and composer caches
+drush/sites/.checksums
+.cache
+.config
+.drush
+.terminus
+
+# Deprecation detector rules
+.rules
+/phpcs.xml.dist
+/phpmd.xml.dist
+grumphp.yml.dist
+
+# ddev
+.ddev/docker-compose.host-docker-internal.yaml
+.ddev/solr

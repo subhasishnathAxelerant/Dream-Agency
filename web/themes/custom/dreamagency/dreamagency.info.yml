@@ -1,0 +1,11 @@
+name: dreamagency
+type: theme
+description: A custom theme extending Stable9.
+version: 1.0
+core_version_requirement: ">=8"
+base theme: stable9
+hidden: false
+
+
+libraries:
+  - dreamagency/mustforagencytheme
