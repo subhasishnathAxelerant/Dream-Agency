@@ -10,6 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "breakpoint-sass": "^3.0.0",
     "browser-sync": "^2.29.3",
     "gulp": "^4.0.2",
     "gulp-sass": "^5.1.0",

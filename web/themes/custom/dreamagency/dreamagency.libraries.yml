@@ -1,9 +1,0 @@
-mustforagencytheme:
-  css:
-    base:
-      main.css: {}
-  js:
-    main.js: {}
-  dependencies:
-    - core/jquery
-

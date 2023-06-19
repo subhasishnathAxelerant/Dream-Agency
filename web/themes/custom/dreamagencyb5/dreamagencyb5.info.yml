@@ -5,13 +5,14 @@ core_version_requirement: '^9.4 || ^10'
 'base theme': bootstrap5
 libraries:
   - dreamagencyb5/global-styling
+  - dreamagencyb5/font-awesome
 ckeditor_stylesheets:
   - css/style.css
 ckeditor5-stylesheets:
   - css/ck5style.css
 regions:
   header: Header
-  nav_branding: 'Navigation branding region'
+  # nav_branding: 'Navigation branding region'
   # nav_main: 'Main navigation region'
   # nav_additional: 'Additional navigation region (eg search form, social icons, etc)'
   # breadcrumb: Breadcrumbs
