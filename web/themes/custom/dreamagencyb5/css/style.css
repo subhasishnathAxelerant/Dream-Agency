@@ -12817,4 +12817,98 @@ code {
   overflow-y: auto;
 }
 
-/*# sourceMappingURL=style.css.map */
+body {
+  font-family: "Hind Vadodara", sans-serif;
+}
+
+.header__nav {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0;
+  width: 100%;
+}
+.header__nav ul li a.nav-link, .header__nav ul li .media-library-view--widget .view-header a, .media-library-view--widget .view-header .header__nav ul li a {
+  font-weight: 400;
+  color: #331b3b;
+  margin: 0 10px;
+}
+.header__nav ul li a.nav-link.active, .header__nav ul li .media-library-view--widget .view-header a.active, .media-library-view--widget .view-header .header__nav ul li a.active, .header__nav ul li .media-library-view--widget .view-header a.is-active, .media-library-view--widget .view-header .header__nav ul li a.is-active {
+  font-weight: 600;
+  color: #331b3b;
+}
+
+#navbarNavDropdown {
+  position: absolute;
+  z-index: 999;
+  background: #fff;
+  width: 100vw;
+  left: 0;
+  top: 100%;
+}
+@media (min-width: 992px) {
+  #navbarNavDropdown {
+    position: relative;
+    z-index: 999;
+    background: unset;
+    width: unset;
+    left: unset;
+    top: unset;
+  }
+}
+
+div#block-dreamagencyb5-branding {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0;
+}
+div#block-dreamagencyb5-branding a.site-logo {
+  text-align: center;
+}
+div#block-dreamagencyb5-branding a.site-logo img {
+  width: 165px;
+  height: auto;
+}
+
+div#block-headersocialicons-2 {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0;
+}
+
+.header_social_list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  font-size: 0;
+  justify-content: flex-end;
+}
+.header_social_list li {
+  margin: 0 10px;
+  background-image: url("../images/header_social_bg.png");
+  background-repeat: no-repeat;
+}
+.header_social_list li:nth-child(1) {
+  padding: 11px 17px;
+}
+.header_social_list li:nth-child(2) {
+  padding: 11px 14px;
+}
+.header_social_list li:nth-child(3) {
+  padding: 11px 14px;
+}
+.header_social_list li a:before {
+  font-family: FontAwesome;
+  font-size: 20px;
+  display: inline-block;
+  color: #331b3b;
+}
+.header_social_list li:nth-child(1) a:before {
+  content: "\f39e";
+}
+.header_social_list li:nth-child(2) a:before {
+  content: "\f0e1";
+}
+.header_social_list li:nth-child(3) a:before {
+  content: "\f16d";
+}

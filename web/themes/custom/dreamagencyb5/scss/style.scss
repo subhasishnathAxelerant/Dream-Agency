@@ -1,13 +1,164 @@
 // Sub theme styling.
-@import 'variables_drupal';
+@import "variables_drupal";
 
 // Bootstrap overriden variables.
 // @see https://getbootstrap.com/docs/5.2/customize/sass/#variable-defaults.
-@import 'variables_bootstrap';
+@import "variables_bootstrap";
 
 // Include bootstrap.
-@import '../../../../themes/contrib/bootstrap5/scss/style';
+@import "../../../../themes/contrib/bootstrap5/scss/style";
+
+// font-family: 'Hind Vadodara', sans-serif;
+
+// Small tablets and large smartphones (landscape view)
+$screen-sm-min: 576px;
+
+// Small tablets (portrait view)
+$screen-md-min: 768px;
+
+// Tablets and small desktops
+$screen-lg-min: 992px;
+
+// Large tablets and desktops
+$screen-xl-min: 1200px;
+
+// Creating necessery mixins.
+// Small devices
+@mixin sm {
+  @media (min-width: #{$screen-sm-min}) {
+    @content;
+  }
+}
+
+// Medium devices
+@mixin md {
+  @media (min-width: #{$screen-md-min}) {
+    @content;
+  }
+}
+
+// Large devices
+@mixin lg {
+  @media (min-width: #{$screen-lg-min}) {
+    @content;
+  }
+}
+
+// Extra large devices
+@mixin xl {
+  @media (min-width: #{$screen-xl-min}) {
+    @content;
+  }
+}
+
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 
 body {
-    background-color: blue;
+  font-family: "Hind Vadodara", sans-serif;
+  // @include sm {
+  //   background-color: red;
+  // }
+  // @include md {
+  //   background-color: green;
+  // }
+  // @include lg {
+  //   background-color: blue;
+  // }
+  // @include xl {
+  //   background-color: violet;
+  // }
+}
+.navbar {
+  // background: antiquewhite;
+}
+.header__nav {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0;
+  width: 100%;
+  ul {
+    li {
+      a.nav-link {
+        font-weight: 400;
+        color: #331b3b;
+        margin: 0 10px;
+        &.active {
+          font-weight: 600;
+          color: #331b3b;
+        }
+      }
+    }
+  }
+}
+#navbarNavDropdown {
+  position: absolute;
+  z-index: 999;
+  background: #fff;
+  width: 100vw;
+  left: 0;
+  top: 100%;
+  @include lg {
+    position: relative;
+    z-index: 999;
+    background: unset;
+    width: unset;
+    left: unset;
+    top: unset;
+  }
+}
+div#block-dreamagencyb5-branding {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0;
+  a.site-logo {
+    text-align: center;
+    img {
+      width: 165px;
+      height: auto;
+    }
+  }
+}
+div#block-headersocialicons-2 {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0;
+}
+.header_social_list {
+  @include reset-list;
+  display: flex;
+  font-size: 0;
+  justify-content: flex-end;
+  li {
+    margin: 0 10px;
+    background-image: url("../images/header_social_bg.png");
+    background-repeat: no-repeat;
+    &:nth-child(1) {
+      padding: 11px 17px;
+    }
+    &:nth-child(2) {
+      padding: 11px 14px;
+    }
+    &:nth-child(3) {
+      padding: 11px 14px;
+    }
+  }
+  li a:before {
+    font-family: FontAwesome;
+    font-size: 20px;
+    display: inline-block;
+    color: #331b3b;
+  }
+  li:nth-child(1) a:before {
+    content: "\f39e";
+  }
+  li:nth-child(2) a:before {
+    content: "\f0e1";
+  }
+  li:nth-child(3) a:before {
+    content: "\f16d";
+  }
 }
